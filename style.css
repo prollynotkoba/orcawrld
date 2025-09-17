@@ -7,9 +7,9 @@ html, body {
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
-    cursor: url("assets/star_w.png") 25 25 25 25 pointer, auto;
-    background: transparent; /* Ensure no white background */
- }
+    cursor: url("assets/star_w.png") 25 25, pointer;
+    background: transparent;
+}
 
  body::before {
      content: "";
@@ -759,3 +759,4 @@ body.intro-inactive {
      font-weight: bold;
      margin-left: 4px;
  }
+
