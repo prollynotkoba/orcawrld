@@ -116,7 +116,7 @@ body.intro-inactive {
  }
 
  h1, h2 {
-     font-size: 24px;
+     font-size: 35px;
      margin: 20px 0;
      /* Glow effect */
      text-shadow:
@@ -766,5 +766,6 @@ body.intro-inactive {
      font-weight: bold;
      margin-left: 4px;
  }
+
 
 
