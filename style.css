@@ -11,6 +11,13 @@ html, body {
     background: transparent;
 }
 
+button,
+a,
+.member:hover,
+#enter-btn:hover {
+    cursor: url("assets/star_w.png") 25 25, pointer;
+}
+
  body::before {
      content: "";
      position: fixed;
@@ -759,4 +766,5 @@ body.intro-inactive {
      font-weight: bold;
      margin-left: 4px;
  }
+
 
