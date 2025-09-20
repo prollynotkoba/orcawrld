@@ -123,11 +123,11 @@ body.intro-inactive {
      /* Glow effect */
      text-shadow:
          0 0 5px #fff,
-         0 0 10px #fff,
+         0 0 10px #c8d5ff,
          0 0 20px #4f504a,
-         0 0 30px #3a3b20,
-         0 0 40px #050503,
-         0 0 50px #282923,
+         0 0 30px #ffdcf0,
+         0 0 40px #421674,
+         0 0 50px #fcc7f9,
          0 0 75px #0e1102;
     ;
      /* Animation for subtle floating movement */
@@ -453,8 +453,8 @@ body.intro-inactive {
      width: 16px;
      height: 16px;
      border-radius: 50%;
-     background: #fff;
-     border: 2px solid #22c55e;
+     background: #ffffff;
+     border: 2px solid #00d9ff;
      cursor: pointer;
      margin-top: -4px;
  }
@@ -464,7 +464,7 @@ body.intro-inactive {
      height: 16px;
      border-radius: 50%;
      background: #fff;
-     border: 2px solid #22c55e;
+     border: 2px solid #180085;
      cursor: pointer;
  }
 
