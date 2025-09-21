@@ -47,7 +47,41 @@ document.getElementById('enter-btn').addEventListener('click', () => {
         music.play().catch(err => console.log('User interaction needed', err));
     }, 800);
 });
-
+document.querySelectorAll('.member, .members').forEach(profile => {
+    profile.addEventListener('click', function(e) {
+        const song = profile.getAttribute('data-song');
+        if (song) {
+            music.src = song;
+            music.currentTime = 0;
+            music.play().catch(() => {});
+            lastProfileSong = song;
+        }
+    });
+});
+const lastProfileSong = null;
+document.addEventListener('click', e => {
+    const target = e.target.closest('.member, .members');
+    if (!target) return;
+    const music = document.getElementById("bg-music");
+    const currentSong = target.getAttribute('data-song');
+    if (currentSong && currentSong !== lastProfileSong) {
+        music.pause();
+        music.currentTime = 0;
+        lastProfileSong = currentSong;
+    }
+    music.play().catch(() => {});
+});
+document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    const music = document.getElementById("bg-music");
+    const currentSong = document.querySelector('.member, .members')?.getAttribute('data-song');
+    if (currentSong && currentSong !== lastProfileSong) {
+        music.pause();
+        music.currentTime = 0;
+        lastProfileSong = currentSong;
+    }
+    music.play().catch(() => {});
+});
 // Modal elements
 const cardModal = document.getElementById('cardModal');
 const cardAvatar = document.getElementById('cardAvatar');
@@ -584,4 +618,3 @@ document.addEventListener("contextmenu", e => {
     setTimeout(() => popup.style.display = "none", 2000);
 });
 document.addEventListener("click", () => popup.style.display = "none");
-
