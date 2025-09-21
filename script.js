@@ -47,19 +47,6 @@ document.getElementById('enter-btn').addEventListener('click', () => {
         music.play().catch(err => console.log('User interaction needed', err));
     }, 800);
 });
-document.addEventListener('DOMContentLoaded', () => {
-
-    document.querySelectorAll('.member, .members').forEach(profile => {
-        profile.addEventListener('click', function(e) {
-            const song = profile.getAttribute('data-song');
-            if (song) {
-                audio.src = song;
-                audio.currentTime = 0;
-                audio.play().catch(() => {});
-            }
-        });
-    });
-});
 
 // Modal elements
 const cardModal = document.getElementById('cardModal');
@@ -597,4 +584,5 @@ document.addEventListener("contextmenu", e => {
     setTimeout(() => popup.style.display = "none", 2000);
 });
 document.addEventListener("click", () => popup.style.display = "none");
+
 
