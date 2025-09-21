@@ -298,7 +298,7 @@ async function updateMembers() {
                             a.href = fullProf.trim();
                             a.target = '_blank';
                             a.className = 'chip';
-                            a.textContent = "View Full Profile";
+                            a.textContent = "🌐 Link";
                             cardSocials.appendChild(a);
                         }
 
@@ -537,7 +537,7 @@ async function updateShawtyCards() {
                             a.href = fullProf.trim();
                             a.target = '_blank';
                             a.className = 'chip';
-                            a.textContent = "View Full Profile";
+                            a.textContent = "🌐 Link";
                             shawtyCardSocials.appendChild(a);
                         }
 
@@ -584,3 +584,4 @@ document.addEventListener("contextmenu", e => {
     setTimeout(() => popup.style.display = "none", 2000);
 });
 document.addEventListener("click", () => popup.style.display = "none");
+
