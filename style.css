@@ -1133,3 +1133,13 @@ body.intro-inactive {
      .yt-clips {
      animation: scroll-left 20s linear infinite;
  }
+ @keyframes scroll-left {
+     from {
+         transform: translateX(100%);
+     }
+
+     to {
+         transform: translateX(-100%);
+     }
+ }
+
