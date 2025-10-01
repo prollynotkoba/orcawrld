@@ -1103,3 +1103,24 @@ body.intro-inactive {
     border: 1px solid #fff0f6;
     cursor: pointer;
 }
+
+    .yt-clips {
+      display: flex;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      justify-items: center;
+      max-width: 1200px;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      align-items: center;
+    }
+
+    .yt-clips iframe {
+      width: 100%;
+      max-width: 560px;
+      aspect-ratio: 16 / 9;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
