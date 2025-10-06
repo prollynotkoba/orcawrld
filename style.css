@@ -1103,53 +1103,55 @@ body.intro-inactive {
     border: 1px solid #fff0f6;
     cursor: pointer;
 }
-  .yt-clips {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    width: max-content;
-    min-width: 100vw;
-    padding: 20px 0;
-    box-sizing: border-box;
-    overflow: hidden;
-    /* Smooth infinite scroll */
-    animation: scroll-left 50s linear infinite;
-}
 
-@keyframes scroll-left {
-    0% {
-        transform: translateX(0);
+    .yt-clips {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        width: max-content;
+        min-width: 100vw;
+        padding: 20px 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        animation: scroll-left 50s linear infinite;
     }
-    100% {
-        transform: translateX(calc(-50% - 560px * 2 - 40px * 2));
-        /* scroll enough to show all 5 videos (adjust if you add more) */
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-50% - 560px * 2 - 40px * 2));
+        }
     }
-}
 
-.yt-clips iframe {
-    width: 560px;
-    min-width: 560px;
-    aspect-ratio: 16 / 9;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    margin-right: 20px;
-}
-
-.yt-clips iframe:last-child {
-    margin-right: 0;
-}
-
-.yt-clips iframe:hover {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
-    transition: box-shadow 0.3s ease;
-}
-
-.yt-clips:hover,
-.yt-clips:focus-within {
-    animation-play-state: paused;
-}
+    .yt-clips iframe {
+        width: 560px;
+        min-width: 560px;
+        aspect-ratio: 16 / 9;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        margin-right: 20px;
+    }
 
 
+    .yt-clips iframe:hover {
+        box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+        transition: box-shadow 0.3s ease;
+    }
+
+    .yt-clips:hover,
+    .yt-clips:focus-within {
+        animation-play-state: paused;
+    }
+
+        .discord-card:hover {
+            transform: scale(1.03) translateY(-4px);
+            box-shadow: 0 8px 32px #0037ffb1;
+        }
+        .discord-card a:hover {
+            background: #ffffff;
+        }
 
 
