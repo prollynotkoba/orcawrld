@@ -585,7 +585,6 @@ document.addEventListener("contextmenu", e => {
 });
 document.addEventListener("click", () => popup.style.display = "none");
 
-
 document.querySelectorAll('.yt-clips iframe').forEach(iframe => {
   iframe.addEventListener('mouseenter', () => {
     document.querySelector('.yt-clips').style.animationPlayState = 'paused';
@@ -600,4 +599,5 @@ document.querySelectorAll('.yt-clips iframe').forEach(iframe => {
     document.querySelector('.yt-clips').style.animationPlayState = 'running';
   });
 });
+
 
