@@ -1113,7 +1113,7 @@ body.intro-inactive {
     padding: 20px;
     box-sizing: border-box;
     align-items: center;
-    animation: scroll-left 30s linear infinite;
+    animation:  scroll-left 50s cubic-bezier(0.77, 0, 0.180, 1) infinite;
     }
 
     @keyframes scroll-left {
@@ -1143,5 +1143,6 @@ body.intro-inactive {
         animation-play-state: paused;
     }
   
+
 
 
