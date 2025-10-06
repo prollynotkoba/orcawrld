@@ -1106,14 +1106,14 @@ body.intro-inactive {
 
     .yt-clips {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     justify-items: center;
     max-width: 1200px;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
     align-items: center;
-    animation: scroll-left 50s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+    animation: scroll-left 30s linear infinite;
     }
 
     @keyframes scroll-left {
@@ -1143,4 +1143,5 @@ body.intro-inactive {
         animation-play-state: paused;
     }
   
+
 
