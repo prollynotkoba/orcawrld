@@ -586,3 +586,18 @@ document.addEventListener("contextmenu", e => {
 document.addEventListener("click", () => popup.style.display = "none");
 
 
+document.querySelectorAll('.yt-clips iframe').forEach(iframe => {
+  iframe.addEventListener('mouseenter', () => {
+    document.querySelector('.yt-clips').style.animationPlayState = 'paused';
+  });
+  iframe.addEventListener('mouseleave', () => {
+    document.querySelector('.yt-clips').style.animationPlayState = 'running';
+  });
+  iframe.addEventListener('focus', () => {
+    document.querySelector('.yt-clips').style.animationPlayState = 'paused';
+  });
+  iframe.addEventListener('blur', () => {
+    document.querySelector('.yt-clips').style.animationPlayState = 'running';
+  });
+});
+
